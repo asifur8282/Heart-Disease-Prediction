@@ -2,9 +2,23 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 import joblib
 import numpy as np
+import os
 
-svm_model = joblib.load("svm_heart_disease_model.pkl")
-scaler = joblib.load("scaler.pkl")
+try:
+    app_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(app_dir, "svm_heart_disease_model.pkl")
+    scaler_path = os.path.join(app_dir, "scaler.pkl")
+    
+    print(f"Loading model from: {model_path}")
+    print(f"Loading scaler from: {scaler_path}")
+    
+    svm_model = joblib.load(model_path)
+    scaler = joblib.load(scaler_path)
+    
+    print("✓ Model and scaler loaded successfully")
+except Exception as e:
+    print(f"✗ Error loading model/scaler: {e}")
+    raise
 
 app = FastAPI(title="Heart Disease Prediction API", version="1.0.0")
 
@@ -68,4 +82,5 @@ def predict(patient: PatientData):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    print("Starting backend API...")
+    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
