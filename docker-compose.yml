@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  heart-disease-app:
+    build: .
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    container_name: heart-disease-prediction
+
+volumes:
+  app:

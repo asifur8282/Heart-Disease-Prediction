@@ -1,0 +1,64 @@
+# Virtual environments
+ml_env/
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Notebooks
+Heart_Disease.ipynb
+Heart_Disease_Data_Cleaning.ipynb
+Heart_Disease_Model_Training.ipynb
+*.ipynb
+
+# CSV files (except cleaned data needed for app)
+Heart_Disease_Prediction.csv
+Heart_Disease_Cleaned.csv.bak
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation and misc
+README.md
+*.md
+.env
+.env.local
+requirements.txt
+requirement_all.txt
+test_svm_model.py
+predict_heart_disease.py
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Other
+.github/
+.pytest_cache/
+.coverage
+htmlcov/
