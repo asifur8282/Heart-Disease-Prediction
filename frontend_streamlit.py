@@ -226,5 +226,5 @@ st.markdown("""
 3. The system will send the data to the backend API
 4. Results will be displayed with a confidence score
 
-**Backend API**: http://127.0.0.1:8000
+**Made with ❤️ for educational purposes only. - By Asifur Rahaman**
 """)
