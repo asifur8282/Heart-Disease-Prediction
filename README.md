@@ -8,7 +8,7 @@ This repository showcases a complete end-to-end machine learning workflow:
 
 - **Data Cleaning**: Remove outliers, handle missing values, and feature engineering using open-source Kaggle datasets
 - **Model Training**: Test 4 different ML algorithms (Logistic Regression, KNN, SVM, Random Forest)
-- **Best Model Selection**: SVM achieved ~90% accuracy and was selected for production
+- **Best Model Selection**: SVM achieved ~91% test accuracy and was selected for production
 - **Deployment**: Interactive web application using Streamlit frontend with FastAPI backend
 - **Learning Focus**: Practical implementation of data science concepts and ML pipeline
 
@@ -231,18 +231,17 @@ Heart Disease Prediction/
 
 ---
 
-## 📸 Screenshots
+## 📸 Example Usage
 
-### Data Cleaning Process
-![Data Cleaning](images/67percent.png)
+**Note**: Images below are  testing of the application. They show example outputs and do not represent official documentation or results.
 
-### Model Training Results
-![Model Training](images/100percent.png)
 
-### Disease Visualization
-![Disease Visualization](images/diseaseresent.png)
+![Example 1](images/67percent.png)
 
-### Application Interface
+![Example 2](images/100percent.png)
+
+![Example 3](images/diseasepresent.png)
+
 ![Application Interface](images/Nodisease.png)
 
 ---
@@ -303,12 +302,12 @@ Heart Disease Prediction/
 
 | Algorithm | Validation Accuracy | Test Accuracy |
 |-----------|-------------------|---------------|
-| Logistic Regression | ~80% | ~80% |
-| KNN | ~85% | ~85% |
-| **SVM** | **~90%** | **~90%** |
-| Random Forest | ~88% | ~88% |
+| Logistic Regression | ~76% | ~88% |
+| KNN | ~76% | ~85% |
+| **SVM** | **~79%** | **~91%** |
+| Random Forest | ~79% | ~88% |
 
-**Selected Model**: SVM (Support Vector Machine)
+**Selected Model**: SVM (Support Vector Machine) - Best test accuracy
 
 ---
 
