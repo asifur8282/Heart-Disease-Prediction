@@ -213,20 +213,25 @@ docker stop heart-disease-app
 
 ```
 Heart Disease Prediction/
+├── Heart_Disease_Prediction.csv           # Raw dataset from Kaggle
+├── Heart_Disease_Cleaned.csv              # Cleaned dataset (after preprocessing)
 ├── Heart_Disease_Data_Cleaning.ipynb      # Data cleaning & preprocessing
 ├── Heart_Disease_Model_Training.ipynb     # Model training & evaluation
 ├── backend_api.py                         # FastAPI backend
 ├── frontend_streamlit.py                  # Streamlit UI
 ├── predict_heart_disease.py               # CLI prediction script
-├── test_svm_model.py                      # Test script
 ├── svm_heart_disease_model.pkl            # Trained SVM model
 ├── scaler.pkl                             # Feature scaler
 ├── Dockerfile                             # Docker configuration
 ├── docker-compose.yml                     # Docker Compose config
 ├── start.sh                               # Container startup script
+├── .dockerignore                          # Docker ignore rules
+├── .gitignore                             # Git ignore rules
 ├── requirement_all.txt                    # All dependencies (data cleaning + app)
 ├── requirement_apponly.txt                # App-only dependencies
-└── images/                                # Project screenshots
+├── LICENSE                                # MIT License
+├── README.md                              # Project documentation
+└── images/                                # Example screenshots
 ```
 
 ---
